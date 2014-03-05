@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff50585D"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/about_title"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/list_bg"
+        android:padding="8dp"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff50585D"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="bitcoin:1DcBuz4G88Da2g9cQaEmNPzcXVNmAHFKq7"
+                android:textColor="#ffffffff"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bitcoin_donate" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="litecoin:LSi5sxttPEn6GXXXPa8Gos9rpmk73C5W76"
+                android:textColor="#ffffffff"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/litecoin_donate" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

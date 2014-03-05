@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff50585D"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_pannel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_username_pannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="FXBtc用户名："
+            android:singleLine="true"
+            android:textColor="#ff57A3E8"
+            android:textColorHint="#ffffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/login_password_pannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="密码："
+            android:inputType="textPassword"
+            android:textColor="#ff57A3E8"
+            android:textColorHint="#ffffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bid_bg"
+            android:text="登录"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff50585D"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/userinfo_overview"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/list_bg"
+        android:padding="8dp"
+        android:textIsSelectable="true"
+        android:textSize="16sp" />
+    
+    <ExpandableListView
+        android:id="@+id/uerinfo_orders"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg"
+        android:visibility="gone"
+        android:layout_margin="2dp"
+        />
+
+    <Button
+        android:id="@+id/enter_market_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bid_bg"
+        android:text="进入交易市场"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+    
+    <Button
+        android:id="@+id/enter_about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_ask_bg"
+        android:text="关于FxTrader"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+</LinearLayout>
