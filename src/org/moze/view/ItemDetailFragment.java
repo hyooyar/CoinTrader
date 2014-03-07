@@ -4,11 +4,11 @@ import java.util.Timer;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.moze.background.DepthTask;
-import org.moze.background.LoginTask;
-import org.moze.background.TickerTask;
-import org.moze.background.TradeTask;
-import org.moze.background.datatype.DepthOrder;
+import org.moze.background.fxbtc.DepthTask;
+import org.moze.background.fxbtc.LoginTask;
+import org.moze.background.fxbtc.TickerTask;
+import org.moze.background.fxbtc.TradeTask;
+import org.moze.background.fxbtc.datatype.DepthOrder;
 import org.moze.constant.fxbtc.OperateConstants;
 import org.moze.constant.fxbtc.UrlConstants;
 import org.moze.view.dummy.DummyContent;

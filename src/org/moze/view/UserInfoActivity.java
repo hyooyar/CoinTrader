@@ -2,11 +2,11 @@ package org.moze.view;
 
 import java.util.ArrayList;
 
-import org.moze.background.TraderApp;
-import org.moze.background.UserInfoTask;
-import org.moze.background.UserOrdersTask;
-import org.moze.background.UserOrdersTask.onUserOrdersUpdateListener;
-import org.moze.background.datatype.UserOrder;
+import org.moze.background.fxbtc.TraderApp;
+import org.moze.background.fxbtc.UserInfoTask;
+import org.moze.background.fxbtc.UserOrdersTask;
+import org.moze.background.fxbtc.UserOrdersTask.onUserOrdersUpdateListener;
+import org.moze.background.fxbtc.datatype.UserOrder;
 import org.moze.constant.fxbtc.UrlConstants;
 import org.moze.view.UserOrdersAdapter.OnOrderCancelListener;
 

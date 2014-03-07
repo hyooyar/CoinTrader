@@ -1,4 +1,4 @@
-package org.moze.background;
+package org.moze.background.fxbtc;
 
 import org.json.JSONException;
 import org.json.JSONObject;

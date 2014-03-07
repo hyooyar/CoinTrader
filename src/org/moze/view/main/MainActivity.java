@@ -1,10 +1,16 @@
-package org.moze.view;
+package org.moze.view.main;
 
+import org.moze.view.R;
+import org.moze.view.content.MarketContentFragment;
 import org.moze.view.slidingmenu.SlidingMenuFragment;
+import org.moze.view.slidingmenu.SlidingMenuFragment.OnMenuItemSelectListener;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
 import android.widget.FrameLayout;
 
 
@@ -13,7 +19,8 @@ import android.widget.FrameLayout;
  *	@version 1.0
  *	@since 2014年3月5日
  */
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnMenuItemSelectListener,
+	OnTouchListener{
 	
 	/**
 	 *	侧滑边栏菜单容器
@@ -29,6 +36,11 @@ public class MainActivity extends Activity {
 	 *	填充方式通过点击侧滑边栏菜单。
 	 */
 	private FrameLayout mContentContainer;
+	
+	/**
+	 * 	市场基本信息碎片
+	 */
+	private MarketContentFragment mMarketContent;
 	
 	/**
 	 * 	碎片填充器，将侧边栏碎片和详情碎片填充进界面
@@ -54,9 +66,35 @@ public class MainActivity extends Activity {
 	private void initView() {
 		mSlidingMenuContainer = (FrameLayout)findViewById(R.id.main_menu);
 		mSlidingMenu = new SlidingMenuFragment();
+		mSlidingMenu.setOnMenuItemSelectListener(this);
 		mFragmentTransaction = getFragmentManager().beginTransaction();
-		mFragmentTransaction.replace(R.id.main_menu, mSlidingMenu).commit();
+		mFragmentTransaction.replace(R.id.main_menu, mSlidingMenu);
 		mContentContainer = (FrameLayout)findViewById(R.id.main_content);
+		
+		mContentContainer.setOnTouchListener(this);
+		mMarketContent = (MarketContentFragment) getFragmentManager().findFragmentById(R.id.main_content);
+		if(mMarketContent == null){
+			mMarketContent = new MarketContentFragment();
+			mFragmentTransaction.replace(R.id.main_content, mMarketContent).commit();
+		}
 	}
-	
+
+
+	@Override
+	public void onItemSelect(int position) {
+		
+	}
+
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		/**
+		 * 	为了规避点击上层Fragment穿透到下层
+		 */
+		if(v == mContentContainer){
+			return true;
+		}
+		return false;
+	}
+
 }

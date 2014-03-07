@@ -2,7 +2,7 @@ package org.moze.view;
 
 import java.util.ArrayList;
 
-import org.moze.background.datatype.Order;
+import org.moze.background.fxbtc.datatype.Order;
 import org.moze.constant.fxbtc.UrlConstants;
 
 import android.content.Context;

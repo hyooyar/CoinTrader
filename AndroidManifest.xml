@@ -18,7 +18,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.moze.view.SplashActivity"
+            android:name="org.moze.view.main.SplashActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.moze.view.MainActivity"
+            android:name="org.moze.view.main.MainActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity

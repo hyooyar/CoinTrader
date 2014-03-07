@@ -1,4 +1,4 @@
-package org.moze.background;
+package org.moze.background.fxbtc;
 
 import java.util.ArrayList;
 import java.util.TimerTask;
@@ -7,8 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.moze.background.ajax.HttpConnectionWithArgs;
-import org.moze.background.datatype.DepthOrder;
-import org.moze.background.datatype.Order;
+import org.moze.background.fxbtc.datatype.DepthOrder;
+import org.moze.background.fxbtc.datatype.Order;
 import org.moze.constant.fxbtc.UrlConstants;
 
 import android.os.Handler;

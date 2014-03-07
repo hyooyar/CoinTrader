@@ -2,8 +2,8 @@ package org.moze.view;
 
 import java.util.ArrayList;
 
-import org.moze.background.CancelOrderTask;
-import org.moze.background.datatype.UserOrder;
+import org.moze.background.fxbtc.CancelOrderTask;
+import org.moze.background.fxbtc.datatype.UserOrder;
 import org.moze.constant.fxbtc.UrlConstants;
 
 import android.content.Context;

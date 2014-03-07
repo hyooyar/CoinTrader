@@ -1,4 +1,4 @@
-package org.moze.background.datatype;
+package org.moze.background.fxbtc.datatype;
 
 public class Order {
 	private int mCount = -1;

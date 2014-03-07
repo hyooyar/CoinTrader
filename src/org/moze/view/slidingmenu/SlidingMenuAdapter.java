@@ -1,7 +1,6 @@
 package org.moze.view.slidingmenu;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 import org.moze.constant.SlidingMenuConstants;
 import org.moze.view.R;

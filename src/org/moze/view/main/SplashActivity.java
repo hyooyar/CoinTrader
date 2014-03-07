@@ -1,6 +1,8 @@
-package org.moze.view;
+package org.moze.view.main;
 
 import org.moze.constant.TimeConstants;
+import org.moze.view.R;
+import org.moze.view.R.layout;
 
 import android.app.Activity;
 import android.content.Intent;

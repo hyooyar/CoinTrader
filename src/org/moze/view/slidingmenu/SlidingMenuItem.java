@@ -17,8 +17,8 @@ public class SlidingMenuItem {
 	
 	/**
 	 * 初始化一个侧滑边栏菜单项
-	 * @param tag：菜单栏显示描述，用于显示菜单栏当前项的描述
-	 * @param resId：菜单栏显示图片资源，用于显示菜单栏的icon资源
+	 * @param tag 菜单栏显示描述，用于显示菜单栏当前项的描述
+	 * @param resId 菜单栏显示图片资源，用于显示菜单栏的icon资源
 	 */
 	public SlidingMenuItem( String tag , int resId ){
 		mTag = tag;
@@ -27,7 +27,7 @@ public class SlidingMenuItem {
 	
 	/**
 	 * 	获取当前菜单项的描述
-	 *  @return String：描述
+	 *  @return String 描述
 	 */
 	public String getTag(){
 		return mTag;
@@ -35,7 +35,7 @@ public class SlidingMenuItem {
 	
 	/**
 	 * 	获取当前菜单项的图片资源id
-	 *  @return int：图片资源id
+	 *  @return int 图片资源id
 	 */
 	public int getResourceId(){
 		return mResourceId;
@@ -43,7 +43,7 @@ public class SlidingMenuItem {
 	
 	/**
 	 * 设置侧滑边栏菜单项描述
-	 * @param tag：菜单栏显示描述，用于显示菜单栏当前项的描述
+	 * @param tag 菜单栏显示描述，用于显示菜单栏当前项的描述
 	 */
 	public void setTag( String tag ){
 		mTag = tag;
@@ -51,7 +51,7 @@ public class SlidingMenuItem {
 	
 	/**
 	 * 设置侧滑边栏菜单项显示图片资源id
-	 * @param resId：菜单栏显示图片资源，用于显示菜单栏的icon资源
+	 * @param resId 菜单栏显示图片资源，用于显示菜单栏的icon资源
 	 */
 	public void setResourceId( int resId ){
 		mResourceId = resId;

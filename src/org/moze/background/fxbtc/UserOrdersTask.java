@@ -1,4 +1,4 @@
-package org.moze.background;
+package org.moze.background.fxbtc;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.moze.background.ajax.HttpConnectionWithArgs;
-import org.moze.background.datatype.UserOrder;
+import org.moze.background.fxbtc.datatype.UserOrder;
 import org.moze.constant.fxbtc.OperateConstants;
 import org.moze.constant.fxbtc.UrlConstants;
 

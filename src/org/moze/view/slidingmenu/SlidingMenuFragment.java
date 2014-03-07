@@ -1,12 +1,6 @@
 package org.moze.view.slidingmenu;
 
-import org.moze.view.About;
-import org.moze.view.LoginActivity;
-import org.moze.view.MainActivity;
-import org.moze.view.SplashActivity;
-
 import android.app.ListFragment;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,23 +16,20 @@ import android.widget.ListView;
  *	@since 2014年3月5日
  */
 public class SlidingMenuFragment extends ListFragment {
-
+	
+	private OnMenuItemSelectListener mItemSelectListener;
+	
+	/**
+	 * 	注册一个供外部回调的Listener，用于外部在点击侧滑边栏菜单时进行替换内容碎片
+	 * 	@param listener 外部需要使用此Fragment时就需要实现一个OnMenuItemSelectListener
+	 */
+	public void setOnMenuItemSelectListener(OnMenuItemSelectListener listener){
+		mItemSelectListener = listener;
+	}
+	
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
-
-		Intent intent;
-		switch (position) {
-		case 0:
-			intent = new Intent(getActivity(), LoginActivity.class);
-			startActivity(intent);
-			break;
-		case 1:
-			intent = new Intent(getActivity(), About.class);
-			startActivity(intent);
-			break;
-		default:
-			break;
-		}
+		mItemSelectListener.onItemSelect(position);
 	}
 
 	@Override
@@ -57,5 +48,19 @@ public class SlidingMenuFragment extends ListFragment {
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		getListView().setCacheColorHint(Color.TRANSPARENT);
+	}
+	
+	/**
+	 * 	侧滑边栏菜单选择监听器
+	 * 	用于在点击菜单项时切换内容碎片
+	 * 	@version 1.0
+	 * 	@since 2014年3月6日
+	 */
+	public interface OnMenuItemSelectListener {
+		/**
+		 * 	在点击菜单项时需要传出点击的索引
+		 * 	@param position 索引
+		 */
+		public void onItemSelect(int position);
 	}
 }

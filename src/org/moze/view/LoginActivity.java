@@ -1,8 +1,8 @@
 package org.moze.view;
 
-import org.moze.background.LoginTask;
-import org.moze.background.LoginTask.onLoginStateChangeListener;
-import org.moze.background.TraderApp;
+import org.moze.background.fxbtc.LoginTask;
+import org.moze.background.fxbtc.TraderApp;
+import org.moze.background.fxbtc.LoginTask.onLoginStateChangeListener;
 
 import android.app.Activity;
 import android.content.Intent;
