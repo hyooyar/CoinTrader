@@ -2,7 +2,7 @@ package org.moze.constant;
 
 public class TimeConstants {
 	/**
-	 * 启动界面延迟（单位ms）
+	 * 鍚姩鐣岄潰鎸佺画鏃堕棿
 	 */
 	public static final long SPLASH_DELAY = 6000;
 	
